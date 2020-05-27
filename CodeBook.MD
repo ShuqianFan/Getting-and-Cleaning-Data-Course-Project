@@ -50,5 +50,8 @@ tBodyAccJerkMean
 tBodyGyroMean  
 tBodyGyroJerkMean  
 
+There are two other variables:  
+30 subjects: 30 volunteers within an age bracket of 19-48 years  
+6 activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING  
 
 
