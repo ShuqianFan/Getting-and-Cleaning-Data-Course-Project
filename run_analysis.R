@@ -49,7 +49,7 @@ newdata$activity <- factor(newdata$activity, levels = activitylabel[, 1], labels
 
 # (4) Appropriately labels the data set with descriptive variable names
 
-# already label first and last column with descriptive variable name in part(2)
+# already labelled subject and activity column with descriptive variable name in part(2)
 
 # (5) From the data set in step 4, creates a second, independent tidy data set with the 
 #     average of each variable for each activity and each subject.
@@ -60,5 +60,5 @@ newdata_mean <- newdata %>%
   group_by(subject, activity) %>%
   summarise_each(funs(mean))
 
-write.table(newdata_mean, 'tidydata.txt')
+write.table(newdata_mean, 'tidydata.txt', row.names = FALSE, quote = FALSE)
 
